@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding: 0;
+    
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        h1{
+            color:#fff ;
+            font-size: 72px;
+            font-weight: bold;
+            padding-top: 287px;
+        }
+         h2{
+            color:#333 ;
+            font-size: 36px;
+            font-weight: bold;
+        }
+         h3{
+            color:#fff ;
+            font-size: 30px;
+            font-weight: bold;
+        }
+         p{
+            color:#333 ;
+            font-size: 18px;
+            
+        }
+        #header{
+            background-image: url(../images/intro-bg.jpg);
+            height: 800px;
+            background-size: cover;
+            background-attachment: fixed;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        #header ul{
+            margin-top: 25px;
+        }
+        #header ul li{
+            list-style: none;
+            display:inline-block;
+            margin: 18px;
+        }
+        #header ul li a{
+            display: block;
+            width:163px;
+            height: 50px;
+            text-indent: -9000px;
+        }
+        
+        .content{
+            width:1064px;
+            margin:0 auto;
+        }
+        .section{
+            overflow: hidden;
+            margin-bottom: 100px;
+        }
+        .left{
+            float:left;
+            width:500px;
+        }
+         .right{
+            float:right;
+              width:500px;
+        }
+        .section h2{
+            margin: 65px 0 20px 0;
+        }
+        #footer{
+            background-image: url(../images/footer-bg.jpg);
+            height: 531px;
+            background-size: cover;
+            background-attachment: fixed;
+           
+        }
+        #footer h2{
+            font-weight: normal;
+            color: #fff;
+            width: 450px;
+            float: left;
+            margin-top: 245px;
+        }
+        .google{
+            background-image: url(../images/google.png);
+        }
+        .google:hover{
+            background-image: url(../images/google-hover.png);
+        }
+        .Twitter{
+             background-image: url(../images/twitter.png);
+        }
+        .Twitter:hover{
+             background-image: url(../images/twitter-hover.png);
+        }
+        .VK{
+             background-image: url(../images/vk.png)
+        }
+        .VK:hover{
+             background-image: url(../images/vk-hover.png)
+        }
+        #footer ul{
+            margin-top: 240px;
+            list-style: none;
+            width: 600px;
+            float: right;
+            margin-right: 6px;
+        }
+        #footer ul li{
+			 float:left;
+             margin-left: 34px;
+        }
+        #footer ul li a {
+            display: block;
+            width: 163px;
+            height: 50px;
+            text-indent: -9000px;
+           
+        }
