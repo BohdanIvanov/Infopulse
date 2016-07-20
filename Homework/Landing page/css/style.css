@@ -18,7 +18,7 @@
             font-size: 36px;
             font-weight: bold;
         }
-         h3{
+         .b-header__subtitle{
             color:#fff ;
             font-size: 30px;
             font-weight: bold;
@@ -28,7 +28,7 @@
             font-size: 18px;
             
         }
-        #header{
+        .b-header{
             background-image: url(../images/intro-bg.jpg);
             height: 800px;
             background-size: cover;
@@ -36,15 +36,15 @@
             margin-bottom: 50px;
             text-align: center;
         }
-        #header ul{
+        .b-header__list{
             margin-top: 25px;
         }
-        #header ul li{
+        .b-header__list_item{
             list-style: none;
             display:inline-block;
             margin: 18px;
         }
-        #header ul li a{
+        .b-header__list_link{
             display: block;
             width:163px;
             height: 50px;
@@ -84,10 +84,10 @@
             float: left;
             margin-top: 245px;
         }
-        .google{
+        .Google{
             background-image: url(../images/google.png);
         }
-        .google:hover{
+        .Google:hover{
             background-image: url(../images/google-hover.png);
         }
         .Twitter{
