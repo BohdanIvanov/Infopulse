@@ -1,0 +1,317 @@
+*{
+			margin:0;
+			padding:0;
+		}
+		
+		html{
+			height:100%;
+			background-image:url(../images/bg.png);
+			background-repeat:repeat-x;
+			background-color:#dadfeb;
+		}
+		
+		body{
+			font-family:arial,sans-serif;
+			height:100%;
+			background-image:url(../images/headerbg.png);
+			background-repeat:repeat-x;
+			background-position:190px 89px;
+			background-size:auto 491px;
+		}
+		
+		a{
+			font-size:13px;
+			font-weight:normal;
+			color:#2945c0;
+		}
+		
+		a:hover{
+			color:#000;
+		}
+		
+		h1{
+			font-weight:normal;
+			font-size:36px;
+			color:#132445;
+			
+		}
+		
+		h2{
+			font-size:20px;
+			font-weight:bold;
+			color:#132445;
+			
+		}
+		
+		h3{
+			font-size:15px;
+			font-weight:bold;
+			color:#132445;
+			
+		}
+		
+		p{
+			font-size:13px;
+			font-weight:normal;
+			color:#545668;
+		}
+		
+		
+		
+		#wrap{
+			width:940px;
+			margin:0 auto;
+			min-height:100%;
+		}
+		
+		#nav{
+			height:89px;
+			
+		}
+		
+		#nav ul{
+			overflow:hidden;
+			list-style:none;
+			line-height:89px;
+			float:right;
+		}
+		
+		#nav ul li{
+			float:left;
+			margin-right:10px;
+		}
+		
+		#nav ul li a{
+			text-decoration:none;
+			font-size:13px;
+			font-weight:bold;
+			color:#2f57a1;
+			border-radius:15px;
+			padding:8px 17px;
+			
+		}
+		
+		#nav ul li a:hover{
+			color:#000;
+			background-color:#f7f7f7;
+			box-shadow:0 1px 0 1px #cdd3e1;
+		}
+		
+		#header{
+			height:491px;
+			background-image:url(../images/3.png);
+			
+			
+		}
+		
+		#content{
+			background-image:url(../images/slurbg.png);
+			height:152px;
+			margin-bottom:10px;
+		}
+		
+		#content h1{
+			margin-top:10px;
+			width:583px;
+			float:left;
+		}
+		
+		#content img{
+			float:right;
+			width:342px;
+		}
+		
+		
+		span{
+			float:left;
+			font-size:12px;
+			font-weight:normal;
+			color:#9fa8bd;
+		}
+		
+		.row{
+			overflow:hidden;
+			margin-bottom:25px;
+		}
+		
+		.row2{
+			overflow:hidden;
+			margin-bottom:50px;
+		}
+		
+		.section{
+			width:215px;
+			height:314px;
+			background-color:#fff;
+			border-radius:5px;
+			margin-right:22px;
+			float:left;
+			border: 1px solid #bfc4d1;
+			
+			
+		}
+		
+		.section img{
+			padding:20px 20px 0px 20px;
+			text-align:center;
+		}
+		
+		.section h2{
+			text-align:center;
+			padding:10px 0;
+
+		}
+		
+		.section p{
+			text-align:left;
+			padding:5px 25px;
+			margin-bottom:5px;
+		}
+		
+		
+		.section a{
+			padding:5px 20px;
+			border-radius:15px;
+			margin-left:23px;
+			background-color:#e8eaee;
+			box-shadow:0 1px 0 1px #cdd3e1;
+			text-decoration:none;
+			
+		}
+		
+		.section a:hover{
+			color:#000;
+		}
+		
+		
+		.section2{
+			width:193px;
+			float:left;
+			margin-right:57px;
+			margin-top:10px;
+			
+			
+		}
+		
+		
+		.section2 h3{
+			background-image:url(../images/cont1.png);
+			background-repeat:no-repeat;
+			height:44px;
+			padding-left:45px;
+			padding-top:15px;
+			
+		}
+		
+		.section2 p{
+			margin-top:-8px;
+			width:200px;
+			
+		}
+		
+		.section3{
+			width:420px;
+			float:left;
+			margin-right:0;
+		}
+		
+		
+		.section3 h3{
+			margin-top:15px;
+			margin-bottom:22px;
+			
+		}
+		
+		.section3 p{
+			text-align:justify;
+			line-height:1.7em;
+			padding-bottom:17px;
+		}
+		
+		
+		#cont1{
+			background-image:url(../images/cont1.png);
+			
+		}
+		
+		#cont2{
+			background-image:url(../images/cont2.png);
+			
+		}
+		
+		#cont3{
+			background-image:url(../images/cont3.png);
+
+		}
+		
+		#cont4{
+			background-image:url(../images/cont4.png);
+			
+		}
+		
+		
+		#footer{
+			background-color:#565f81;
+			height:119px;
+			width:100%;	
+		}
+		
+		
+		#footercontent{
+			width:940px;
+			margin:0 auto;
+			
+		}
+		
+		#footer ul{
+			list-style:none;
+			padding-top:19px;
+			margin-bottom:10px;
+			
+		}
+		
+		#footer ul li{
+			display:inline-block;
+			padding-right:6px;
+			color:#dadfeb;
+		}
+		
+		#footer ul li a{
+			text-decoration:none;
+			color:#dadfeb;
+			
+		}
+		
+		.fotcont{
+			float:right;
+			margin-top:-20px;
+			margin-right:10px;
+		}
+		
+		.fotcont img{
+			margin-top:-8px;
+			margin-right:15px;
+		}
+		
+		.fotcont span{
+			font-size:13px;
+			font-weight:normal;
+			color:#dadfeb;
+			padding-right:20px;
+		}
+		
+		.marnone{
+			margin-right:0;
+		}
+		
+		h3.padd{
+			padding-left:35px;
+		}
+		
+		h3.padd2{
+			padding-left:50px;
+		}
+		
+		.mar2{
+			margin-bottom:30px;
+		}
