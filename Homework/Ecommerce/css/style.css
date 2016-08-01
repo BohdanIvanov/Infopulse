@@ -348,7 +348,7 @@ nav ul li a:active{
 	height:0px;
 	transition:height 1.5s;
 	-webkit-transition:height 1.5s;
-	-moz-webkit-transition:height 1.5s;
+	-moz-transition:height 1.5s;
 }
 
 .text h2{
