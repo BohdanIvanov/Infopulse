@@ -76,6 +76,12 @@ body{
     vertical-align: middle;
 }
 .b-preview__text {
+    font-family: cursive;
+    font-size:18px;
+    font-style:oblique;
+    font-weight:normal;
+    color:#ADF3FF;
+    line-height:40px;
 }
 .b-preview__arrow {
     -moz-user-select: none;
