@@ -275,6 +275,10 @@
     
 }
 
+.stories__center-content{
+    margin-left:372px;
+}
+
 
 .stories__content_img{
     
@@ -297,10 +301,6 @@
     margin-left:370px;
 }
 
-/*.marleft2{
-
-}*/
-
 .stories__line{
     background-color:#f1f1f1;
     width:2px;
@@ -318,4 +318,105 @@
 
 .text{
     text-indent:50px;
+}
+
+.team{
+    padding:120px 0;
+    background-color:#f7f7f7;
+}
+
+.team__content{
+    margin:0 auto;
+    width:940px;
+}
+
+.team-info{
+    display:flex;
+    justify-content:space-around;
+}
+
+.team-info__person{
+    text-align:center;
+}
+
+.team-info__person_photo{
+    margin-bottom:15px;
+}
+
+.team-info__person_name{
+    font-family:'Montserrat', sans-serif;
+    font-size:16px;
+    font-weight:bold;
+    color:#222;
+}
+
+.team-info__person_position{
+    font-family: 'Roboto Slab', serif;
+    font-size:14px;
+    color:#777;
+    margin-top:5px;
+    margin-bottom:10px;
+}
+
+.team-info__person_link{
+    display:inline-block;
+    width:41px;
+    height:41px;
+    margin-right:10px;
+    transition:all 0.3s ease-out;
+}
+
+.facebook{
+    background-image:url(../images/facebook.png);
+    background-repeat:no-repeat; 
+}
+
+.facebook:hover{
+    background-image:url(../images/facebook-hover.png);
+    background-repeat:no-repeat; 
+}
+
+.twitter{
+    background-image:url(../images/twitter.png);
+    background-repeat:no-repeat; 
+}
+
+.twitter:hover{
+    background-image:url(../images/twitter-hover.png);
+    background-repeat:no-repeat; 
+}
+
+.printerest{
+    background-image:url(../images/printerest.png);
+    background-repeat:no-repeat; 
+}
+
+.printerest:hover{
+    background-image:url(../images/printerest-hover.png);
+    background-repeat:no-repeat; 
+}
+
+.google{
+    background-image:url(../images/google.png);
+    background-repeat:no-repeat; 
+}
+
+.google:hover{
+    background-image:url(../images/google-hover.png);
+    background-repeat:no-repeat; 
+}
+
+.team__content_text{
+    width:645px;
+    margin-top:40px;
+    margin-left:135px;
+    font-family: 'Roboto Slab', serif;
+    font-size:16px;
+    color:#777;
+    text-align:center;
+    line-height:1.5em;
+}
+
+.marnone{
+    margin:0;
 }
