@@ -438,9 +438,8 @@
 }
 
 .contacts{
-    background-image:url(../images/bottom-bg.png);
-    background-repeat:no-repeat;
-    background-size: cover;
+    background:fixed url(../images/bottom-bg.png) no-repeat;
+    background-size:cover;
 }
 
 .contacts__content{
@@ -502,4 +501,25 @@
 
 .contacts__form_submit:hover{
     background-color:#e5b511;
+}
+
+.footer{
+    
+}
+
+.footer__content{
+    width:940px;
+    margin:0 auto;
+    padding:30px 0;
+    
+}
+
+.footer__content_text{
+    display:inline-block;
+    margin-right:100px;
+    font-family:'Montserrat', sans-serif;
+    font-size:14px;
+    color:#555;
+    margin-top:13px;
+    vertical-align:top;
 }
