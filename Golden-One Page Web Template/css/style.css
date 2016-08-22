@@ -8,6 +8,8 @@
     src:url(fonts/WisdomScript.ttf);
 }
 
+/*HEADER*/
+
 .b-header{
     padding-top:50px;
     padding-bottom:230px;
@@ -24,7 +26,6 @@
 }
 
 .b-header__content_logo{
-    /*float:left;*/
     font-family:'Wisdom Script';
     font-size:26px;
     color:#fed136;
@@ -57,12 +58,6 @@
 .link{
     text-decoration:none;
 }
-
-/*.b-header__content:after{
-    content:'';
-    display:table;
-    clear:both;
-}*/
 
 .b-header__home{
     width:940px;
@@ -106,6 +101,8 @@
 .b-header__home_button:hover{
     background-color:#e5b511;
 }
+
+/*SERVICES*/
 
 .b-services{
     width:940px;
@@ -183,6 +180,8 @@
     
 }
 
+/*OUR PORTFOLIO*/
+
 .portfolio{
     padding:120px 0;
     background-color:#f7f7f7;
@@ -215,10 +214,6 @@
     background-color:#fff;
 }
 
-.works__item_img{
-    
-}
-
 .works__item_name{
     font-family:'Montserrat', sans-serif;
     font-weight:bold;
@@ -246,6 +241,8 @@
     margin-right:20px;
     margin-bottom:15px;
 }
+
+/*ABOUT US*/
 
 .stories{
     background-color:#fff;   
@@ -277,11 +274,6 @@
 
 .stories__center-content{
     margin-left:372px;
-}
-
-
-.stories__content_img{
-    
 }
 
 .stories__left-content_title{
@@ -319,6 +311,8 @@
 .text{
     text-indent:50px;
 }
+
+/*OUR TEAM*/
 
 .team{
     padding:120px 0;
@@ -421,9 +415,7 @@
     margin:0;
 }
 
-.logos{
-    
-}
+/*LOGO*/
 
 .logos__content{
     width:940px;
@@ -436,6 +428,8 @@
     margin-right:40px;
     vertical-align:middle;
 }
+
+/*CONTACTS*/
 
 .contacts{
     background:fixed url(../images/bottom-bg.png) no-repeat;
@@ -503,9 +497,7 @@
     background-color:#e5b511;
 }
 
-.footer{
-    
-}
+/*FOOTER*/
 
 .footer__content{
     width:940px;
