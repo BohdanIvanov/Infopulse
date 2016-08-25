@@ -12,7 +12,6 @@ body{
 }
 
 
-
 @font-face{
 	font-family:'Lato-Light';
 	src:url(../Fonts/Lato-Light.ttf);
@@ -50,7 +49,8 @@ body{
 	height:881px;
 	background-image:url(../img/images/bg-top.png);
 	background-repeat:no-repeat;
-	background-size:100% 100%;
+	background-size:cover;
+	background-position: center center;
 }
 
 .link{
@@ -62,7 +62,7 @@ body{
 }
 
 .header-content{
-	width:1180px;
+	width:1180px;  													/* 1180px; */
 	padding-top:10px;
 	margin:0 auto;
 }
@@ -71,17 +71,17 @@ body{
 	font-family:'Lato-Light';
 	font-size:60px;
 	color:#fff;
-	text-align:center;
 	font-weight:normal;
 	margin-top:120px;
 	margin-bottom:20px;
+	text-align:center;
 }
 
 .header-content_text{
 	color:#d0e7e9;
 	font-family:'Lato-Italic';
 	font-weight:normal;
-	width:650px;
+	width:55.08474576271186%;														/*650*/
 	text-align:center;
 	margin:0 auto;
 	line-height:2em;
@@ -92,24 +92,24 @@ body{
 	display:block;
 	height:103px;
 	width:99px;
-	margin:0 auto;
+	margin-left:45.76271186440678%;										/*540*/
 	background-image:url(../img/images/play.png);
 	background-repeat:no-repeat;
 }
 
 .header-content_link{
 	display:block;
-	width:150px;
-	padding:20px 90px;
+	width:12.71186440677966%;								/*150*/
+	padding:20px 70px;
 	border-radius:5px;
 	font-family:'Lato-Bold';
 	font-size:22px;
 	color:#fff;
 	text-decoration:none;
-	background-color:#7accc8;
-	margin-left:425px;
-	margin-top:260px;
 	text-align:center;
+	background-color:#7accc8;
+	margin-top:280px;
+	margin-left:37.28813559322034%;							/*440*/
 }
 
 /*IPAD + DARK CONTENT*/
@@ -119,7 +119,8 @@ body{
 	height:1357px;
 	background-image:url(../img/images/orange-ipad.png);
 	background-repeat:no-repeat;
-	background-size:100% 100%;
+	background-size:cover;
+	background-position:center -40px;
 }
 
 
@@ -130,7 +131,7 @@ body{
 }
 
 .ipad-content_title{
-	width:700px;
+	width:59.32203389830508%;											/*700*/
 	font-size:55px;
 	color:#fff;
 	font-family:'Lato-Light';
@@ -138,7 +139,7 @@ body{
 }
 
 .ipad-content_text{
-	width:700px;
+	width:59.32203389830508%;											/*700*/
 	font-size:16px;
 	color:#fff;
 	font-family:'Lato-Regular';
@@ -148,7 +149,7 @@ body{
 
 .ipad-content_link{
 	display:block;
-	width:280px;
+	width:23.72881355932203%;														/*280*/
 	padding:22px 0;
 	text-align:center;
 	color:#fff;
@@ -162,13 +163,14 @@ body{
 
 .dark-wrap{
 	position:absolute;
-	bottom:-20px;
+	bottom:-28px;
 	/*top:-640px;*/
 	height:622px;
 	width:100%;
 	background-image:url(../img/images/green-bg.png);
 	background-repeat:no-repeat;
-	background-size:100% 100%;
+	background-size: cover;
+	background-position:center bottom;
 }
 
 .dark-content{
@@ -463,6 +465,11 @@ body{
 
 .mar-none{
 	margin-bottom:none;
+}
+
+@media screen and (max-width:960px){
+		background-color: red;
+		background-image:none;
 }
 
 
