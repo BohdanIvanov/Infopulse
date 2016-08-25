@@ -468,8 +468,10 @@ body{
 }
 
 @media screen and (max-width:960px){
+	/*.header-wrap{
 		background-color: red;
 		background-image:none;
+	}*/
 }
 
 
