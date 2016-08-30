@@ -1,0 +1,80 @@
+.b-form{
+	position:absolute;
+	top:150px;
+	left:50px;
+}
+
+.b-form__group{
+	margin-bottom:20px;
+}
+
+.b-door{
+	height:350px;
+	width:200px;
+	/*background-image:url(../images/closed-door.png);
+	background-size:contain;
+	background-repeat:no-repeat;*/
+	margin:0 auto;
+}
+
+.border{
+    	border:2px solid black;
+}
+
+.b-form_button__open-door{
+	
+}
+
+.b-form_button__closed-door{
+	
+}
+
+.b-form_button__door-hinges{
+	
+}
+
+.open{
+	background-image:url(../images/opened-door.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.close{
+	background-image:url(../images/closed-door.png);
+	background-size:contain;
+	background-repeat:no-repeat;
+}
+
+.without-hinges{
+    background-image:url(../imageshttp://localhost/f2s/hw/door-without-hinges.png);
+    background-size:contain;
+	background-repeat:no-repeat;
+}
+
+
+.b-door_small{
+    width:115px;
+    height:200px;
+}
+
+.b-door_middle{
+    width:172px;
+    height:300px;
+}
+
+.b-door_large{
+    width:230px;
+    height:400px;
+}
+
+.b-door_red{
+    border-color:red;
+}
+
+.b-door_green{
+    border-color:green;
+}
+
+.b-door_blue{
+    border-color:blue;
+}

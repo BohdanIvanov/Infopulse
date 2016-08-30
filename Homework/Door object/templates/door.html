@@ -1,0 +1,44 @@
+<!Doctype html>
+<html>
+	<head>	
+		<title>Door</title>
+		<link rel="stylesheet" href='../stylesheets/door.css'>
+		</head>
+	<body>
+			<div class="b-door border close b-door_red b-door_small" id='door1'></div>
+				<form action='?' method='GET' id='form1' class='b-form'>
+					<div class="b-form__group">
+						<label class="b-form__label_border-width">Border thickness</label>
+							<input type="button" class="b-form__button_increase" value="+">
+							<input type="button" class="b-form__button_decrease" value="-">
+					</div>
+					<div class="b-form__group">
+						<label class="b-form_label__border-color">Border color</label>
+							<select name="color" class="b-form_label__color"> 
+								<option value='red'>Red</option>						
+								<option value='blue'>Blue</option>						
+								<option value='green'>Green</option>						
+							</select>
+					</div>
+					<div class="b-form__group">
+						<label class="b-form_label__door-size">Door size</label>
+							<select name="size" class="b-form_label__size">
+								<option value="small">S</option>						
+								<option value="middle">M</option>						
+								<option value="large">L</option>						
+							</select>
+					</div>
+					<div class="b-form__group">
+						<input type="button" name="open-door" class="b-form__button_open-door" value="Open door">
+						<input type="button" name="closed-door" class="b-form__button_closed-door" value="Close the door">
+						<input type="button" name="door-hinges" class="b-form__button_door-hinges" value="Door without hinges">
+					</div>
+				</form>
+	</body>
+	<script src='../scripts/jquery-3.0.0.min.js'></script>
+	<script src='../scripts/doorObject.js'></script>
+	<script src='../scripts/formControls.js'></script>
+	<script type="text/javascript">
+	 var f1 = new doorControlsForm('#form1');
+	</script>
+</html>
