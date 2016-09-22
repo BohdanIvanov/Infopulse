@@ -67,7 +67,7 @@ ins {
   padding-top: 50px;
   padding-bottom: 230px;
   height: 700px;
-  background: fixed url(../images/header-bg.png) no-repeat;
+  background:url(../images/header-bg.png) no-repeat;
   background-size: cover;
 }
 

@@ -1,0 +1,136 @@
+@media screen and (max-width:1440px){
+    .header__content{
+        left:40%;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .menu-bar__content{
+    width:75%;
+    max-width:1500px;
+    margin-left:20%;   
+    }
+    
+    .nav{
+        float:none;
+        margin-left:20%;
+    }
+    
+    .nav__item{
+    display:inline-block;
+    margin-right:2.225352112676056%;                   
+    
+    }
+    
+    .nav__item_link{
+    font-size:0.75em;
+    }
+    
+    .header__content_title{
+    font-size:2.5em;
+    }
+
+.header__content_bold{
+    font-family:'Lato-Bold';
+    }
+
+.header__content_text{
+    width:80%;
+    font-size:1.1em;
+    }
+    
+    .features__content_title{
+    font-size:2.0em;
+}
+
+.features__content_text{
+    font-size:1.1em;
+    
+}
+}
+
+
+@media screen and (max-width:1024px){
+    .header__content{
+        left:33%;
+    }
+    
+    .features__content_title{
+    margin-left:5%;
+    text-align:center;
+    }
+    
+    .f-list{
+    margin-left:15%;
+    }
+    
+    .f-list__item{
+    float:left;
+    width:40.23630136986301%;                 
+    margin-right:8.98972602739726%;        
+    text-align:center;
+}
+    
+.slick-prev, .slick-next{
+    z-index:-1;
+    width:62px;
+    height:62px;
+    background-color:rgba(101,116,121,0.5);
+    border-radius:50%;
+   
+}
+    
+    .picture{
+    height:auto;
+    width:auto;
+}
+    .footer__content{
+    width:70%px;
+    margin:0 auto;
+    }
+    
+    .footer__content_title{
+    font-size:2.0em;
+    }
+    
+    .list-account__item{
+    width:89.8972602739726%;      /*1050px*/
+    }
+}
+
+@media screen and (max-width:960px){
+    .logo{
+        width:15%;
+    }
+    
+    .nav__item_link{
+        font-size:0.7em;
+    }
+    
+    .header__content{
+        top:250px;
+    }
+    
+    .header__content_title{
+    width:50%;
+    text-align:center;
+    }
+    
+    .header__content_text{
+    width:60%;
+    text-align:justify;
+    font-size:1.1em;
+    }
+    
+    .features__content_title{
+    text-align:center;
+    }
+    
+    .sl_slide{
+        text-align:left;
+    }
+    
+    .slick-dots li button{
+        left:20px;
+    }
+}
