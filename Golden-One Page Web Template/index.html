@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet" type="text/css">
+    <script src='js/error.js'></script>
 </head>
 <body>
     <header class="b-header">
@@ -183,10 +184,10 @@
         <h2 class="contacts__content_title">Contact Us</h2>
         <p class="contacts__content_sub-title">Proin iaculis purus consequat sem cure.</p>
         <form class="contacts__form">
-            <input class="contacts__form_input" type="text" name="name" placeholder="your name *">
-            <input class="contacts__form_input" type="email" placeholder="your e-mail *">
-            <input class="contacts__form_input" type="text" placeholder="subject">
-            <textarea class="contacts__form_message" name="message" placeholder="subject"></textarea>
+            <input class="contacts__form_input b-textfield" type="text" name="name" placeholder="your name *">
+            <input class="contacts__form_input b-textfield" type="email" name="email" placeholder="your e-mail *">
+            <input class="contacts__form_input b-textfield" type="text" name='subject' placeholder="subject">
+            <textarea class="contacts__form_message b-textfield" name="message" placeholder="subject"></textarea>
             <input class="contacts__form_submit" type="submit" name="send message" value="send message">
         </form>
         </div>
@@ -201,4 +202,12 @@
         </div>
     </footer>
 </body>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src='js/settings.js'></script>
+    <script src='js/init_settings.js'></script>
+    <script src='js/component.js'></script>
+    <script src='js/checker.js'></script>
+    <script>
+    var f1  = new checker('.contacts__form');
+    </script>
 </html>

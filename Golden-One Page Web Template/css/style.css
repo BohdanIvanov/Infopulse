@@ -498,6 +498,7 @@ ins {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+    border:1px solid transparent;
 }
 
 .contacts__form_message {
@@ -511,6 +512,7 @@ ins {
   -moz-border-radius: 5px;
   border-radius: 5px;
   resize: none;
+    border:1px solid transparent;
 }
 
 ::-webkit-input-placeholder {
@@ -558,4 +560,11 @@ ins {
   color: #555;
   margin-top: 13px;
   vertical-align: top;
+}
+
+.b-textfield_error
+{
+box-shadow:		0 0 2px red;
+    transition:all 0.2s linear;
+    border:1px solid red;
 }
