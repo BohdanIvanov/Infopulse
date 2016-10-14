@@ -1,0 +1,132 @@
+@import "foundation";
+
+.no-bg {
+  background: transparent !important;
+}
+
+.custom-pb {
+  padding-bottom: 10px !important;
+}
+
+.tiny-text {
+  font-size: 17px;
+  line-height:1.8;
+    padding-left:22px;
+}
+
+/*.active-link:visited{
+    outline: 0;
+}*/
+
+.active-link:focus{
+    outline: none;
+}
+
+.line{
+    height:1px;
+    background-color:#aaa;
+}
+
+.aligning{
+  /*padding-left:50px;
+    font-size:55px;
+    line-height:47px;*/
+    display:inline-block;
+    height:60px;
+    width:1px;
+    background-color:#b7b7b7;
+    
+}
+
+.bg{
+    
+    background-color:#f0f0f0 !important;
+    
+}
+
+/*.bor{
+    border-right:1px solid grey;
+    padding-bottom:0;
+}*/
+
+.text-uppercase {
+  text-transform: uppercase;
+   
+}
+
+.basic-link {
+  text-decoration: underline;
+  color: #000;
+}
+
+.main-sub-heading {
+  color: $grey;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+}
+
+.main-heading {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 22px;
+}
+
+.main-body-p {
+  color: $grey;
+  line-height: (22/14);
+}
+
+.decorative-line {
+  background: $grey;
+  height: 2px;
+}
+
+.item-name {
+  text-transform: uppercase;
+  color: $accent;
+}
+
+.item-price {
+  color: $grey;
+}
+
+table.button {
+  margin-bottom: 0;
+  table {
+    td {
+      padding: map-get($button-padding, default);
+      a {
+        padding: 0px;
+      }
+    }
+  }
+}
+
+.follow{
+    font-size:24px;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    line-height:32px;
+    
+}
+
+.left-padn{
+    padding-top:3px;
+}
+
+.symbol{
+    display:inline-block;
+    padding-left:65px;
+    color:#b9b9b9;
+  
+}
+
+.small-text{
+    font-size:12px;
+    color:#151515;
+}
+
+.under{
+    border-bottom:1px solid #c4c4c4;
+}
