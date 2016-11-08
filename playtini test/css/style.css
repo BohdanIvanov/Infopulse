@@ -1,0 +1,383 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face{
+    font-family:'OpenSans Light';
+    src:url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face{
+    font-family:'OpenSans Italic';
+    src:url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face{
+    font-family:'OpenSans Bold';
+    src:url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face{
+    font-family:'OpenSans ExtraBold';
+    src:url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face{
+    font-family:'NautilusPompiliusRegular';
+    src:url(../fonts/NautilusPompiliusRegular.ttf);
+}
+
+
+
+html{
+    width:100%;
+    background-color:#169399;
+    
+}
+
+body{
+    width:100%;
+    height:100%;
+    background-color:#169399;
+
+}
+
+.bg{
+    position:absolute;
+    top:50px;
+    width:1151px;
+    height:890px;
+    background-image:url(../images/girls.png);
+    background-repeat: no-repeat;
+    margin-left:14%;
+}
+
+.logo{
+    width:149px;
+    height:59px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    margin-top:10px;
+}
+
+.header-list{
+    list-style:none;
+    margin-left:5%;
+}
+
+.header-list__item{
+    display:inline-block;
+    margin-right:15px;
+}
+
+.header-list__item:last-child{
+    margin-right:0;
+}
+
+.header-list__item_link{
+    display:block;
+    font-family:'OpenSans Light';
+    font-size:14px;
+    color:#7de5ea;
+    text-transform:uppercase;
+    background-color:rgba(0,0,0,0.3);
+    padding:5px 15px;
+    margin-top:30px;  
+}
+
+.header-list__item_link:hover{
+    background-color:#5dbfc4;
+    color:#000;
+}
+
+.link:hover{
+    text-decoration:none;
+}
+
+.title{
+    font-family:'NautilusPompiliusRegular';
+    font-size:72px;
+    color:#fff;
+    text-shadow:1px 4px 5px #072324;
+    margin-left:5%;
+    margin-top:40px;
+}
+
+.main-form{
+    margin-top:30px;
+    border:1px solid #39f7ff;
+    background-color:rgba(0,0,0,0.3);
+    text-align:center;
+    padding:35px 0;
+    width:450px;
+    box-sizing:border-box;
+    margin-left:0;
+}
+
+.main-form__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    color:#70e6ea;
+}
+
+.main-form__label{
+    position:relative;
+    padding-left:50px;
+    cursor:pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size:18px;
+    font-weight:400;
+    color:#fff;
+    margin-top:1px;
+    z-index:15;
+}
+
+.main-form__input{
+    display:block;
+    width:315px;
+    height:45px;
+    box-sizing: border-box;
+    margin-left:15%;
+    border-radius:3px;
+    outline:none;
+    margin-bottom:10px;
+    background-color:#e1e5ed;
+    border:1px solid transparent;
+}
+
+::-webkit-input-placeholder{
+    text-align:center;
+    font-family:'OpenSans Italic';
+    font-size:18px;
+    color:#7c818c;
+}
+
+.main-form__submit{
+    display:block;
+    font-family:'OpenSans ExtraBold';
+    font-size:24px;
+    color:#fff;
+    background-image:url(../images/button-bg.png);
+    background-color:transparent;
+    border-radius:7px;
+    border:none;
+    width:316px;
+    height:66px;
+    margin-left:15%;
+    margin-top:15px;
+    -webkit-box-shadow:1px 1px 10px 1px #000;
+    -moz-box-shadow:1px 1px 10px 1px #000;
+    box-shadow:1px 1px 10px 1px #000;
+}
+
+.main-form__submit:hover{
+    -webkit-box-shadow:1px 1px 10px 1px #000;
+    -moz-box-shadow:1px 1px 10px 1px #000;
+    box-shadow:2px 2px 15px 4px #cf3508;
+}
+
+.main-form__price{
+    font-family:'OpenSans Bold';
+    font-weight:700;
+    font-size:32px;
+    color:#fff;
+    margin-top:-15px;
+    margin-bottom:20px;
+}
+
+.currency-list{
+    list-style:none;
+    display:inline-block;
+    margin-left:-60px;
+    margin-top:10px;
+}
+
+.currency__item{
+    display:inline-block;
+    position:relative;
+    z-index:15;
+}
+
+input[type=radio]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.check{
+  display: block;
+  position: absolute;
+  background-color:#fff;
+  border-radius: 100%;
+  height: 25px;
+  width: 25px;
+  top: 1px;
+  left: 10px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+.check:before {
+  display: block;
+  position: absolute;
+  content: '';
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  transition: background 0.15s linear;
+  -webkit-transition: background 0.15s linear;
+}
+
+input[type=radio]:checked ~ .check:before{
+  background: #0b494c;
+}
+
+
+.main-form__list{
+    list-style:none;
+    margin-top:25px;
+    margin-bottom:15px;
+}
+
+.main-form__list_item{
+    display:inline-block;
+}
+
+.main-form__list_link{
+    display:block;
+    width:42px;
+    height:42px;
+    margin-right:10px;
+}
+
+.main-form__list_link:last-child{
+    margin-right:none;
+}
+
+
+
+.main-form__reg{
+    font-family: 'Open Sans', sans-serif;
+    font-size:12px;
+    color:#70e6ea;
+}
+
+.main-form__reg_link{
+    border-bottom:1px solid #fff;
+    color:#fff;
+}
+
+.main-form__reg_link:hover{
+    color:#fff;
+    text-decoration:none;
+}
+
+@media screen and (max-width:1200px){
+    .main-form{
+        margin-left:20%;
+    }
+    
+    .title{
+        margin-left:10%;
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .bg{
+        margin-left:5%;
+    }
+    
+    
+    .title{
+        margin-left:30%;
+    }
+    
+    .header-list{
+        margin-left:15%;
+    }
+    
+    .header-list__item{
+        display:inline-block;
+        margin-right:-4px;
+    }
+    
+    .header-list__item:last-child{
+        display:none;
+    }
+    
+    .main-form{
+        margin-left:30%;
+    }
+    
+}
+
+
+@media screen and (max-width:768px){
+    body{
+        background-color:#004346;
+        padding-bottom:100px;
+    }
+    
+    
+    
+    .bg{
+        top:0;
+        margin-left:0;
+        width:768px;
+        height:918px;
+        background-image:url(../images/girls-small.png);
+        background-size:cover;
+        background-position:center center;
+        background-repeat: no-repeat;
+    }
+    
+    .logo{
+        margin-left:20px;
+    }
+    
+    .header-list{
+       margin-left:13%; 
+    }
+    
+    .main-form{
+        width:580px;
+        margin-left:1%;
+    }
+    
+    .main-form__input{
+        margin-left:130px;
+    }
+    
+    .header-list__item{
+        display:inline-block;
+        margin-right:-4px;
+    }
+    
+    .header-list__item_link{
+        padding-left:10px;
+        padding-right:10px;
+    }
+    
+    .header-list__item:last-child{
+        display:none;
+    }
+    
+    .title{
+        font-size:100px;
+        margin-left:12%;
+        margin-top:780px;
+    }
+    
+    .main-form__submit{
+        margin-left:130px;
+    }
+    
+    .currency-list{
+        margin-left:5px;
+    }
+}
