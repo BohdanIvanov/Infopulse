@@ -1,0 +1,31 @@
+@media screen and (min-width:768px){
+    .header-list__link:hover{
+        color:#188cef;
+        text-decoration:underline;
+    }
+    
+    .intro__button:hover{
+        background-color:#fff;
+        color:#188cef;
+        border:2px solid #188cef;
+    }
+    
+    .products-list__item_link:hover{
+        color:#fff;
+        background-color:#188cef;
+    }
+    
+    .news-list__item_link:hover{
+        border-bottom:1px solid #188cef;
+    }
+    
+    .contacts-form__submit:hover{
+        color:#188cef;
+        background-color:#fff;
+        border:2px solid #188cef;
+    }
+    
+    .footer__contacts:hover{
+        border-bottom:1px solid #188cef;
+    }
+}
