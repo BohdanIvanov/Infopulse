@@ -31,12 +31,20 @@
     src:url(../../fonts/OpenSans-ExtraBold.ttf);
 }
 
-header{
+@font-face{
+    font-family:'OpenSans-Regular';
+    src:url(../../fonts/OpenSans-Regular.ttf);
+}
+
+html{
+    width:100%;
+}
+
+.header{
     background-color:#fff;
     width:100%;
     padding:0 40px;
     height:77px;
-    
     box-sizing:border-box;
     border:1px solid transparent;
     position:fixed;
@@ -79,7 +87,7 @@ header{
     margin:0 auto;
 }
 
-main{
+.main{
     width:100%;
     margin-top:80px;
     background-color:#f2f2f2;
@@ -112,7 +120,7 @@ main{
 
 .intro__button{
     display:block;
-    background-color:#188cef;
+    background-color:$blue;
     width:130px;
     padding:12px 0;
     text-align:center;
@@ -125,12 +133,6 @@ main{
     margin-top:30px;
 }
 
-/*.intro__button:hover{
-    background-color:#fff;
-    color:#188cef;
-    border:2px solid #188cef;
-}*/
-
 .products{
     padding-top:100px;
     padding-bottom:120px;
@@ -138,19 +140,19 @@ main{
 
 .products__title{
     font-family:'Roboto-Bold';
-    font-size:52px;
-    color:#252525;
+    font-size:52px;                 
+    color:$black;
     margin-bottom:50px;
 }
 
 .products-list{
-    list-style:none;
+    list-style:none;                
 }
 
 .products-list__item{
     display:inline-block;
     height:295px;
-    width:28.84615384615385%;           //300px
+    width:28.84615384615385%;        
     background-color:#fff;
     text-align:center;
     margin-right:6%;
@@ -163,52 +165,69 @@ main{
 }
 
 .products-list__item_img{
-    margin-top:40px;
+    width:111px;
+    height:100px;
+    margin-top:40px;        
+}
+
+.bulp{
+    background-image: url(../../images/img1.png);
+    background-repeat: no-repeat;
+    margin-left:110px;
+}
+
+.ladder{
+    background-image: url(../../images/img2.png);
+    background-repeat: no-repeat;
+    margin-left:95px;
+}
+
+.shield{
+    background-image: url(../../images/img3.png);//
+    background-repeat: no-repeat;
+    margin-left:110px;
 }
 
 .products-list__item_text{
     font-family:'OpenSans-ExtraBold';
     font-size:18px;
-    color:#252525;
+    color:$black;
     margin-top:20px;
     margin-bottom:30px;
 }
 
-.products-list__item_link{
+.products-list__item_link{          
     display:inline-block;
     width:100px;
     padding:10px 0;
     font-family:'Roboto-Medium';
     font-size:15px;
-    border:2px solid #188cef;
+    border:2px solid $blue;
     border-radius:40px;
-    color:#188cef;
+    color:$blue;
     transition: all 0.2s linear;
     
 }
 
-/*.products-list__item_link:hover{
-    color:#fff;
-    background-color:#188cef;
-}*/
-
 .advertise{
-    height:400px;
+    /*height:400px;*/
     background-image: url(../../images/sc-bg.png);
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center top;
     padding-top:1px;
+    padding-bottom:100px;
     margin-bottom:75px;
+    text-align:center;
 }
 
 .advertise__title{
     font-family:'Roboto-Bold';
     font-size:42px;
     color:#fff;
-    margin-top:145px;
-    margin-bottom:30px;
-    text-align:center;
+    margin-top:135px;
+    margin-bottom:20px;
+    
 }
 
 .advertise__text{
@@ -224,12 +243,11 @@ main{
 .news__title{
     font-family:'Roboto-Bold';
     font-size:46px;
-    color:#252525;
+    color:$black;
     margin-bottom:35px;
 }
 
 .news-list{
-    height:705px;
     list-style:none;
     display:inline-flex;
     flex-wrap: wrap;
@@ -237,12 +255,18 @@ main{
     align-content:space-between;
 }
 
+.news-mobile{
+    display:none;
+}
+
 .news-list__item{
-    width:250px;                //250px
+    width:250px;            
     height:295px;
     background-color:#fff;
     border-radius:5px;
     box-shadow:0px 1px 3px 0px #c2c2c2;
+    margin-bottom:15px;
+    flex: 0 1 auto;
     
 }
 
@@ -250,7 +274,7 @@ main{
     height:35px;
     font-family:'Roboto-Medium';
     font-size:16px;
-    color:#252525;
+    color:$black;
     margin-left:15px;
     margin-top:15px;
 }
@@ -259,7 +283,7 @@ main{
     display:inline-block;
     font-family:'Roboto-Medium';
     font-size:16px;
-    color:#188cef;
+    color:$blue;
     margin-left:15px;
     margin-top:60px;
 }
@@ -273,13 +297,13 @@ main{
 .contacts:after{
     content:'';
     display:table;
-    clear:both;
+    clear:both;//
 }
 
 .contacts__title{
     font-family:'Roboto-Bold';
     font-size:46px;
-    color:#252525;
+    color:$black;
     margin-bottom:55px;
 }
 
@@ -296,7 +320,7 @@ main{
 }
 
 .contacts__info_name{
-    font-family:'Roboto-Regular';
+    font-family:'Roboto-Regular';       
     font-size:10px;
     color:#808080;
 }
@@ -304,7 +328,7 @@ main{
 .contacts__info_text{
     font-family:'Roboto-Regular';
     font-size:18px;
-    color:#252525;
+    color:$black;
 }
 
 .contacts-form{
@@ -324,35 +348,32 @@ main{
     margin-top:20px;
 }
 
-.contacts-form__input{
+.contacts-form__input{         
     height:37px;
     width:100%;
     border-radius:20px;
-    border:1px solid #e1e1e1;
+    border:1px solid #e1e1e1; 
     outline:none;
 }
 
-
 .contacts-form__submit{
     width:100%;
+    height:44px;
     border-radius:40px;
-    background-color:#188cef;
-    border:none;
-    padding:12px 0;
+    background-color:$blue;
     font-family:'Roboto-Medium';
     font-size:17px;
     color:#fff;
     margin-top:15px;
     cursor:pointer;
-    border:2px solid transparent;
+    border:2px solid transparent;//   
     transition: all 0.2s linear;
 }
 
 .footer{
     width:100%;
-    height:75px;
     background-color:#f2f2f2;
-    padding:31px 40px 0 40px;
+    padding:31px 40px 45px 40px;
     box-sizing:border-box;
 }
 
@@ -360,13 +381,13 @@ main{
     font-family:'Roboto-Light';
     font-size:14px;
     color:#363636;
-    floaT:left;
+    float:left;
 }
 
 .footer__number{
     font-family:'Roboto-Regular';
     font-size:14px;
-    color:#252525;
+    color:$black;
     float:right;
     margin:0 18px;
 }
@@ -374,10 +395,26 @@ main{
 .footer__contacts{
     font-family:'Roboto-Regular';
     font-size:14px;
-    color:#188cef;
+    color:$blue;
     border-bottom:1px solid #a6cef1;
     float:right;
     
 }
 
+.left-side{
+    display:none;
+}
 
+.right-side{
+    display:none;
+}
+
+.nav{
+    display:none;
+    position:absolute;
+    left:-1;
+    width:100%;
+    height:630px;
+    background-color:#fff;
+    padding-right:5px;
+}

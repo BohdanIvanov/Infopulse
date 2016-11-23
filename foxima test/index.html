@@ -3,17 +3,28 @@
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href='app/css/bundle.min.css'>
+<script type='text/javascript' src='scripts/jquery-3.0.0.min.js'></script>
 </head>
 <body>
-    <header>
-        <div class="logo"><img src='images/logo.png'></div>
+    <header class="header">
+        <a href='#' class="logo"><img src='images/logo.png'></a>
         <ul class="header-list">
             <li class="header-list__item"><a href="#" class="header-list__link link">Products</a></li>
             <li class="header-list__item"><a href="#" class="header-list__link link">News</a></li>
             <li class="header-list__item"><a href="#" class="header-list__link link">Contacts</a></li>
         </ul>
+        <div class="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link link">Products</a></li>
+            <li class="nav__item"><a href="#" class="nav__link link">News</a></li>
+            <li class="nav__item"><a href="#" class="nav__link link">Contacts</a></li>
+        </ul>
     </header>
-    <main>
+    <main class="main">
         <div class='intro'>
             <div class="wrapper">
                 <h1 class="intro__title">The Emerald Buddha</h1>
@@ -26,17 +37,17 @@
                 <h2 class="products__title">Products</h2>
                 <ul class="products-list">
                     <li class="products-list__item">
-                        <img src='images/img1.png' class="products-list__item_img">
+                        <div class="products-list__item_img bulp"></div>
                         <p class='products-list__item_text'>Telescopes 101</p>
                         <a href="#" class="products-list__item_link link">See more</a>
                     </li>
                     <li class="products-list__item">
-                        <img src='images/img2.png' class="products-list__item_img">
+                        <div class="products-list__item_img ladder"></div>
                         <p class='products-list__item_text'>Pictures In The Sky</p>
                         <a href="#" class="products-list__item_link link">See more</a>
                     </li>
                     <li class="products-list__item">
-                        <img src='images/img3.png' class="products-list__item_img">
+                        <div class="products-list__item_img shield"></div>
                         <p class='products-list__item_text'>Moon Fever</p>
                         <a href="#" class="products-list__item_link link">See more</a>
                     </li>
@@ -94,6 +105,24 @@
                         <a href="#" class="news-list__item_link link">Read more</a>
                     </li>
                 </ul>
+                <ul class="news-mobile">
+                    <li class="news-mobile__item">
+                        <div class="news-mobile__item_img news1"></div>
+                        <p class="news-mobile__item_text">Italian Cuisine Diverse And<br>Delicious</p>
+                        <a href="#" class="news-mobile__item_link link">Read more</a>
+                    </li>
+                    <li class="news-mobile__item">
+                        <div class="news-mobile__item_img news2"></div>
+                        <p class="news-mobile__item_text">Going Wireless With Your Headphones</p>
+                        <a href="#" class="news-mobile__item_link link new-mar">Read more</a>
+                    </li>
+                    <li class="news-mobile__item">
+                        <div class="news-mobile__item_img news3"></div>
+                        <p class="news-mobile__item_text">Laser Eye Surgery A Risk Analysis For My Daughter</p>
+                        <a href="#" class="news-mobile__item_link link">Read more</a>
+                    </li>
+                    <a href="#" class="news-mobile__view link">View all</a>
+                </ul>
             </div>
         </section>
         <div class="contacts">
@@ -124,10 +153,22 @@
         </div>
     </main>
     <footer class="footer">
-        <p class="footer__copyright">&copy; Emerald Buddha, 2013</p>
-        <a href="#" class="footer__contacts link">Contact us</a>
-        <p class="footer__number">+1 (456) 7895545</p>
-        <a href="#" class="footer__contacts link">inbox@emerald.com</a>
-    </footer>
+        <div class="footer-content">
+            <p class="footer__copyright">&copy; Emerald Buddha, 2013</p>
+            <a href="#" class="footer__contacts link bottom">Contact us</a>
+            <p class="footer__number">+1 (456) 7895545</p>
+            <a href="#" class="footer__contacts link top">inbox@emerald.com</a>
+        </div>
+        </footer>
 </body>
+    <script type='text/javascript' src='scripts/component.js'></script>
+    <script type='text/javascript' src='scripts/menu.js'></script>
+    <script>var m1 = new menu('.header')</script>
+<script>
+    $(document).ready(function(){
+	$('.mobile-menu').click(function(){
+		$(this).toggleClass('open');
+	});
+});
+</script>
 </html>
