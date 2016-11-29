@@ -49,6 +49,7 @@ html{
     border:1px solid transparent;
     position:fixed;
     top:0;
+    z-index:2;
 }
 
 .logo{
@@ -71,10 +72,12 @@ html{
 }
 
 .header-list__link{
+    display:block;
     font-family:'Roboto-Regular';
     font-size:14px;
     color:#363636;
     text-transform:uppercase;
+    transition:all 0.2s linear;
 }
 
 .link{
@@ -89,7 +92,7 @@ html{
 
 .main{
     width:100%;
-    margin-top:80px;
+    margin-top:77px;
     background-color:#f2f2f2;
 }
 
@@ -146,46 +149,48 @@ html{
 }
 
 .products-list{
-    list-style:none;                
+    list-style:none;
+    display:flex;
+    justify-content: space-between;
 }
 
 .products-list__item{
-    display:inline-block;
     height:295px;
-    width:28.84615384615385%;        
+    width:28.84615384615385%;
     background-color:#fff;
     text-align:center;
-    margin-right:6%;
     border-radius:5px;
     box-shadow:0px 1px 10px 0px #c2c2c2;
+    border:1px solid transparent;
+    box-sizing: border-box;
 }
 
 .products-list__item:last-child{
     margin-right:0;
 }
 
+
 .products-list__item_img{
-    width:111px;
     height:100px;
-    margin-top:40px;        
+    margin-top:40px;
+    margin-left:37%;
+    margin-right:10%;
 }
 
 .bulp{
     background-image: url(../../images/img1.png);
     background-repeat: no-repeat;
-    margin-left:110px;
 }
 
 .ladder{
     background-image: url(../../images/img2.png);
     background-repeat: no-repeat;
-    margin-left:95px;
+    margin-left:32%;
 }
 
 .shield{
     background-image: url(../../images/img3.png);//
     background-repeat: no-repeat;
-    margin-left:110px;
 }
 
 .products-list__item_text{
@@ -210,7 +215,6 @@ html{
 }
 
 .advertise{
-    /*height:400px;*/
     background-image: url(../../images/sc-bg.png);
     background-repeat:no-repeat;
     background-size:cover;
@@ -255,6 +259,11 @@ html{
     align-content:space-between;
 }
 
+.news-link{
+    display:block;
+    text-decoration:none;
+}
+
 .news-mobile{
     display:none;
 }
@@ -270,13 +279,18 @@ html{
     
 }
 
+.news-list__item img{
+    width:100%;
+    border-radius:5px 5px 0px 0px;
+    opacity: 0.8;
+}
+
 .news-list__item_text{
     height:35px;
     font-family:'Roboto-Medium';
     font-size:16px;
     color:$black;
-    margin-left:15px;
-    margin-top:15px;
+    padding:15px 15px 0 15px;
 }
 
 .news-list__item_link{
@@ -297,7 +311,7 @@ html{
 .contacts:after{
     content:'';
     display:table;
-    clear:both;//
+    clear:both;
 }
 
 .contacts__title{
@@ -354,6 +368,7 @@ html{
     border-radius:20px;
     border:1px solid #e1e1e1; 
     outline:none;
+    padding-left:8px;
 }
 
 .contacts-form__submit{
@@ -366,15 +381,22 @@ html{
     color:#fff;
     margin-top:15px;
     cursor:pointer;
-    border:2px solid transparent;//   
+    border:2px solid transparent;   
     transition: all 0.2s linear;
+    outline:none;
 }
 
 .footer{
     width:100%;
     background-color:#f2f2f2;
-    padding:31px 40px 45px 40px;
+    padding:31px 40px 30px 40px;
     box-sizing:border-box;
+}
+
+.footer-content:after{
+    content:'';
+    display:table;
+    clear:both;
 }
 
 .footer__copyright{
@@ -397,8 +419,7 @@ html{
     font-size:14px;
     color:$blue;
     border-bottom:1px solid #a6cef1;
-    float:right;
-    
+    float:right; 
 }
 
 .left-side{
@@ -411,10 +432,12 @@ html{
 
 .nav{
     display:none;
-    position:absolute;
-    left:-1;
-    width:100%;
-    height:630px;
-    background-color:#fff;
-    padding-right:5px;
+    padding:120px 0;
+    position:fixed;
+   left:0;
+    top:0;
+   width:100%;
+   background-color:#fff;
+   height:500px;
+    overflow-y: scroll;
 }
