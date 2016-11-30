@@ -1,2 +1,7 @@
 $blue:#188cef;
 $black:#252525;
+
+@function get-vw($target) { 
+  $vw-context: (640*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}

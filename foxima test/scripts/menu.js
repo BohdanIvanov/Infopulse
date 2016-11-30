@@ -4,6 +4,13 @@ function menu(sSelector){
     m.init(sSelector);
     m.mobileIcon = m.find('.mobile-menu');
     m.navMenu = m.find('.nav');
+    m.pictures = m.find('.news-list__item_img');
+    
+    m.changePic = function(){
+        var sPath = m.pictures.attr('src'),
+            sNewPath = sPath + '-small';
+        m.pictures.attr('src', sNewPath);
+    }
     
     
     //logic

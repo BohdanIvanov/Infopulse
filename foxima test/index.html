@@ -63,65 +63,49 @@
         <section class="news">
             <div class="wrapper">
                 <h3 class="news__title">News</h3>
-                <ul class="news-list">
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic1.png'>
-                            <p class="news-list__item_text">Coocking Healthy For Radiant Health</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic2.png'>
-                            <p class="news-list__item_text">Buying Prescription Drugs In Canada</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic3.png'>
-                            <p class="news-list__item_text">Computer Repair</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic4.png'>
-                            <p class="news-list__item_text">Aloe Vera A Wonder Herb For Skin</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic5.png'>
-                            <p class="news-list__item_text">Pictures In The Sky</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic6.png'>
-                            <p class="news-list__item_text">Male Menopause The Alternative Anti Aging Approach</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic7.png'>
-                            <p class="news-list__item_text">Tourism Is Back In Full Swing In Cancun Mexico</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-list__item">
-                        <a href="#" class="news-link">
-                            <img src='images/pic8.png'>
-                            <p class="news-list__item_text">Roar With Confidence</p>
-                            <a href="#" class="news-list__item_link link">Read more</a>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="news-mobile">
+                <div class="news-list">
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img1"></div>
+                        <p class="news-list__item_text">Coocking Healthy For Radiant Health</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img2"></div>
+                        <p class="news-list__item_text">Buying Prescription Drugs In Canada</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img3"></div>
+                        <p class="news-list__item_text">Computer Repair</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img4"></div>
+                        <p class="news-list__item_text">Aloe Vera A Wonder Herb For Skin</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img5"></div>
+                        <p class="news-list__item_text">Pictures In The Sky</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img6"></div>
+                        <p class="news-list__item_text">Male Menopause The Alternative Anti Aging Approach</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img7"></div>
+                        <p class="news-list__item_text">Tourism Is Back In Full Swing In Cancun Mexico</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                    <a href="#" class="news-list__item">
+                        <div class="news-list__item_img img8"></div>
+                        <p class="news-list__item_text">Roar With Confidence</p>
+                        <p class="news-list__item_link link">Read more</p>
+                    </a>
+                </div>
+                <!--<ul class="news-mobile">
                     <li class="news-mobile__item">
                         <a href="#" class="news-link">
                             <div class="news-mobile__item_img news1"></div>
@@ -143,8 +127,9 @@
                             <a href="#" class="news-mobile__item_link link">Read more</a>
                         </a>
                     </li>
-                    <a href="#" class="news-mobile__view link">View all</a>
-                </ul>
+                    
+                </ul>-->
+                <a href="#" class="news-mobile__view link">View all</a>
             </div>
         </section>
         <div class="contacts">
@@ -185,7 +170,9 @@
 </body>
     <script type='text/javascript' src='scripts/component.js'></script>
     <script type='text/javascript' src='scripts/menu.js'></script>
+    <script type='text/javascript' src='scripts/pictures.js'></script>
     <script>var m1 = new menu('.header')</script>
+    <script>var n1 = new news('.news')</script>
 <script>
     $(document).ready(function(){
 	$('.mobile-menu').click(function(){
