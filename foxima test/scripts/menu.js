@@ -18,9 +18,14 @@ function menu(sSelector){
         m.navMenu.toggleClass('active');
     }
     
+    m.changeIcon = function(){
+        $(this).toggleClass('open');
+    }
+    
     
     //events
     m.mobileIcon.click(m.menuToggle);
+    m.mobileIcon.click(m.changeIcon);
 }
 
 menu.prototype = new Component();

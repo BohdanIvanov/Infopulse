@@ -1,5 +1,7 @@
+<!Doctype html>
 <html>
 <head>
+<title>Foxima layout</title>
 <meta charset='utf-8'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href='app/css/bundle.min.css'>
@@ -7,7 +9,7 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo"><img src='images/logo.png'></a>
+        <a href="#" class="logo"><img src='images/logo.png' alt="logo"></a>
         <ul class="header-list">
             <li class="header-list__item"><a href="#" class="header-list__link link">Products</a></li>
             <li class="header-list__item"><a href="#" class="header-list__link link">News</a></li>
@@ -105,30 +107,6 @@
                         <p class="news-list__item_link link">Read more</p>
                     </a>
                 </div>
-                <!--<ul class="news-mobile">
-                    <li class="news-mobile__item">
-                        <a href="#" class="news-link">
-                            <div class="news-mobile__item_img news1"></div>
-                            <p class="news-mobile__item_text">Italian Cuisine Diverse And<br>Delicious</p>
-                            <a href="#" class="news-mobile__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-mobile__item">
-                        <a href="#" class="news-link">
-                            <div class="news-mobile__item_img news2"></div>
-                            <p class="news-mobile__item_text">Going Wireless With Your Headphones</p>
-                            <a href="#" class="news-mobile__item_link link new-mar">Read more</a>
-                        </a>
-                    </li>
-                    <li class="news-mobile__item">
-                        <a href="#" class="news-link">
-                            <div class="news-mobile__item_img news3"></div>
-                            <p class="news-mobile__item_text">Laser Eye Surgery A Risk Analysis For My Daughter</p>
-                            <a href="#" class="news-mobile__item_link link">Read more</a>
-                        </a>
-                    </li>
-                    
-                </ul>-->
                 <a href="#" class="news-mobile__view link">View all</a>
             </div>
         </section>
@@ -149,7 +127,7 @@
                         <p class="contacts__info_text">New York<br>3983 Douglas Cape Apt. 289</p>
                     </div>
                 </div>
-                <form action='' method='POST' class='contacts-form'>
+                <form action='?' method='POST' class='contacts-form'>
                     <label for='name' class="contacts-form__label">Your name</label>
                     <input type='text' id='name' class="contacts-form__input">
                     <label for='phone' class="contacts-form__label mar-top">Your phone</label>
@@ -167,17 +145,10 @@
             <a href="#" class="footer__contacts link top">inbox@emerald.com</a>
         </div>
         </footer>
-</body>
-    <script type='text/javascript' src='scripts/component.js'></script>
+        <script type='text/javascript' src='scripts/component.js'></script>
     <script type='text/javascript' src='scripts/menu.js'></script>
     <script type='text/javascript' src='scripts/pictures.js'></script>
     <script>var m1 = new menu('.header')</script>
     <script>var n1 = new news('.news')</script>
-<script>
-    $(document).ready(function(){
-	$('.mobile-menu').click(function(){
-		$(this).toggleClass('open');
-	});
-});
-</script>
+    </body>
 </html>
